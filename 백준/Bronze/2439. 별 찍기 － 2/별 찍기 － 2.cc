@@ -1,0 +1,21 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+using LL = long long;
+
+LL a,b,c,d;
+LL result;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    cin >> a;
+    for(int i = 1; i <= a; i++)
+    {
+        for(int j = a-i; j--;)    cout << ' ';
+        for(int j = i; j--;)    cout << '*';
+        cout << '\n';
+    }
+}
